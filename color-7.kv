@@ -1,0 +1,46 @@
+#:import utils kivy.utils
+
+<MyGridLayout>
+	name:name
+	age:age
+	address:address
+
+
+	GridLayout:
+		cols: 1
+		size: (root.width, root.height)
+
+		GridLayout:
+			cols: 2
+
+			Label:
+				text: "Name"
+			TextInput:
+				id:name
+				multiline: False
+				background_color: utils.get_color_from_hex('#eefa00')
+
+			Label:
+				text: "Age"
+			TextInput:
+				id: age
+				multiline: False
+
+			Label:
+				text: "Address"
+			TextInput:
+				id: address
+				multiline: True
+
+		Button:
+			text: "Submit"
+			font_size: 32
+			on_press:root.press()
+			#RGB - A
+			background_normal: ''
+			#background_color: (238/255.0, 255/255.0, 250/255.0, 1)
+			background_color: utils.get_color_from_hex('#eefa00')
+
+
+
+
