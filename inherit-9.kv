@@ -1,0 +1,24 @@
+<MyLayout>
+	BoxLayout:
+		orientation: 'vertical'
+		size: (root.width, root.height)
+
+		padding: 50
+		spacing: 20
+
+		Button:
+			text: 'Hello this is Box 1'
+
+		Button:
+			text: 'Hello this is Box 2'
+
+		Button:
+			text: 'Hello this is Box 3'
+			pos_hint: {'center_x': .5}
+			size_hint: (.5, .5) #size ikutan berubah kalo windowsnya diperkecil
+			#size_hint: (None, None) #ga bakal berubah sizenya walau diperkecil
+			width: 200
+			height: 50
+
+
+
