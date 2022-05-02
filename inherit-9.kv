@@ -1,24 +1,40 @@
+<Button>
+	font_size: 20
+	background_normal: ''
+	background_color: (0, 0, 1, 1)
+
+<TextInput>
+	background_color:(150/255.0, 150/255.0, 150/255.0, 1)
+
+
+<Label>
+	font_size: 20
+
 <MyLayout>
 	BoxLayout:
 		orientation: 'vertical'
 		size: (root.width, root.height)
 
-		padding: 50
-		spacing: 20
+		padding: 10
+		spacing: 10
+
+		Label:
+			text: "Name"
+
+		TextInput:
+			multiline: False
+
+		Label:
+			text: "Favorite Food"
+
+		TextInput:
+			multiline: False
 
 		Button:
-			text: 'Hello this is Box 1'
-
+			text: 'Submit'
 		Button:
-			text: 'Hello this is Box 2'
+			text: 'Clear'
+			background_color: (1,0,0,1)
 
-		Button:
-			text: 'Hello this is Box 3'
-			pos_hint: {'center_x': .5}
-			size_hint: (.5, .5) #size ikutan berubah kalo windowsnya diperkecil
-			#size_hint: (None, None) #ga bakal berubah sizenya walau diperkecil
-			width: 200
-			height: 50
-
-
+		
 
