@@ -1,0 +1,24 @@
+<MyLayout>
+	#bg color behind button
+	#this will overwrite Window.clearcolor
+	canvas.before:
+		Color:
+			rgba: (0, 1, 1, 1)
+		Rectangle:
+			pos: self.pos
+			size: self.size
+
+	BoxLayout:
+		orientation: 'vertical'
+		size: (root.width, root.height)
+
+		padding: 50
+		spacing: 20
+
+		Button:
+			text: 'Color 1'
+			
+		Button:
+			text: 'Color 2'
+		
+
