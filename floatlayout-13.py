@@ -12,7 +12,7 @@ class MyLayout(Widget):
 
 class AwesomeApp(App):
 	def build(self):
-		Window.clearcolor = (1,1,1,1)
+		Window.clearcolor = (0,1,1,1)
 		return MyLayout()
 
 if __name__ == "__main__":
