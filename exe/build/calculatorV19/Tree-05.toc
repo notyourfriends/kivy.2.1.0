@@ -1,0 +1,5 @@
+('D:\\kivy\\virt\\share\\glew\\bin',
+ None,
+ [],
+ 'DATA',
+ [('glew32.dll', 'D:\\kivy\\virt\\share\\glew\\bin\\glew32.dll', 'DATA')])
