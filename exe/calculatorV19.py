@@ -23,7 +23,6 @@ class MyLayout(Widget):
 		if "ERROR" in prior:
 			prior = ''
 
-
 		# determine if 0 is sitting there
 		if prior == "0":
 			self.ids.calc_input.text = " "
@@ -84,20 +83,6 @@ class MyLayout(Widget):
 		except:
 			self.ids.calc_input.text = 'ERROR'
 
-		'''
-		#Addition
-		if "+" in prior:
-			# split out text bot by + sign
-			num_list = prior.split("+")
-			answer = 0.0
-
-			#loop thru out list
-			for number in num_list:
-				answer = answer + float(number)
-			
-			#print the answer in the text box
-			self.ids.calc_input.text = str(answer)
-		'''
 class CalculatorApp(App):
 	def build(self):
 		return MyLayout()
