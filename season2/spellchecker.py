@@ -22,7 +22,6 @@ class MyLayout(Widget):
 		word = self.ids.word_input.text
 
 		options = s.suggest(word)
-
 		x = ''
 		for item in options:
 			x = f'{x} {item}'
