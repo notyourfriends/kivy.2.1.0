@@ -40,6 +40,7 @@ class MyLayout(Widget):
 		self.slide_text.text = str(int(args[1]))
 		self.slide_text.font_size = str(int(args[1]) * 5)
 
+	#shared code with radio button & checkbox button
 	checks = []
 	def checkbox_click(self, instance, value, topping):
 		if value == True:
@@ -56,7 +57,11 @@ class MyLayout(Widget):
 				tops = f'{tops} {x}'
 			self.ids.output_label1.text = f'You Selected: {tops}'
 			self.ids.output_label2.text = f'You Selected: {tops}'
-			
+
+	def spinner_clicked(self, value):
+		self.ids.click_label.text = f'You selected {value}'
+
+
 class AccordsApp(App):
 	def build(self):
 		return MyLayout()

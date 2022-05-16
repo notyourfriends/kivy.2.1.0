@@ -170,6 +170,24 @@
 					font_size: 20
 					on_release: Factory.MyPopup().open()
 
+			AccordionItem:
+				orientation: 'horizontal'
+				title: 'Tutorial 32: Dropdown Spinner Boxes'
+				Label:
+					id: click_label
+					text: "Pick Your Favorite Color"
+					font_size: 20
+
+
+				Spinner:
+					id: spinner_id
+					text: 'Favorite Color'
+					values: ['Red','Green','Blue']
+					size_hint: .5 , .4
+					on_text: root.spinner_clicked(spinner_id.text)
+
+				
+
 
 <RoundedButton@Button>
 	background_color: (0, 0, 0, 0)
