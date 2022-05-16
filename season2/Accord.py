@@ -56,9 +56,7 @@ class MyLayout(Widget):
 				tops = f'{tops} {x}'
 			self.ids.output_label1.text = f'You Selected: {tops}'
 			self.ids.output_label2.text = f'You Selected: {tops}'
-
-
-
+			
 class AccordsApp(App):
 	def build(self):
 		return MyLayout()
