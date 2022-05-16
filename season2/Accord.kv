@@ -123,7 +123,7 @@
 					CheckBox: 
 						on_active: root.checkbox_click(self,self.active, 'Mushroom')
 				Label:
-					id: output_label
+					id: output_label1
 					text: ''
 					font_size: 15
 
@@ -155,7 +155,7 @@
 						group: "pizza_toppings" 	
 						on_active: root.checkbox_click(self,self.active, 'Mushroom')
 				Label:
-					id: output_label
+					id: output_label2
 					text: ''
 					font_size: 15
 
@@ -169,6 +169,7 @@
 					text: 'Click Me!'
 					font_size: 20
 					on_release: Factory.MyPopup().open()
+
 
 <RoundedButton@Button>
 	background_color: (0, 0, 0, 0)

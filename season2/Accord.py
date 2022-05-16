@@ -1,8 +1,8 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.widget import Widget
-from kivy.core.window import Window
 from kivy.core.spelling import Spelling
+
 
 #Design File
 Builder.load_file('Accord.kv')
@@ -47,13 +47,15 @@ class MyLayout(Widget):
 			tops = ''
 			for x in MyLayout.checks:
 				tops = f'{tops} {x}'
-			self.ids.output_label.text = f'You Selected: {tops}'
+			self.ids.output_label1.text = f'You Selected: {tops}'
+			self.ids.output_label2.text = f'You Selected: {tops}'
 		else:
 			MyLayout.checks.remove(topping)
 			tops = ''
 			for x in MyLayout.checks:
 				tops = f'{tops} {x}'
-			self.ids.output_label.text = f'You Selected: {tops}'
+			self.ids.output_label1.text = f'You Selected: {tops}'
+			self.ids.output_label2.text = f'You Selected: {tops}'
 
 
 
