@@ -171,7 +171,6 @@
 					on_release: Factory.MyPopup().open()
 
 			AccordionItem:
-				orientation: 'horizontal'
 				title: 'Tutorial 32: Dropdown Spinner Boxes'
 				Label:
 					id: click_label
@@ -186,6 +185,34 @@
 					size_hint: .5 , .4
 					on_text: root.spinner_clicked(spinner_id.text)
 
+			AccordionItem:
+				title: 'Tutorial 33: Resize Widget with Splitter'
+
+				Splitter:
+					sizable_from: 'top'
+					Button:
+						text: 'Hello World 1'
+						font_size: 20
+				Label:
+					text_size: 'This is some Text!'
+					font_size: 20
+
+				Splitter:
+					sizable_from: 'top'
+					Button:
+						text: 'Hello World 2'
+						font_size: 20
+
+				GridLayout:
+					cols: 2
+					Button:
+						text: 'left'
+						font_size: 20
+					Splitter:
+						sizable_from: 'left'
+						Button:
+							text: 'right'
+							font_size: 20
 				
 
 
