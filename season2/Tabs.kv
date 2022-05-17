@@ -1,0 +1,29 @@
+<MyLayout>
+	do_default_tab: False
+
+	tab_pos: "right_mid"
+
+	# ft_top, left_mid, left_bottom, top_left
+	# top_mid, top_right, right_top, right_mid
+	# right_bottom, bottom_left, bottom_mid
+	# bottom_right
+
+	TabbedPanelItem:
+		text: 'Tab 1'
+		Label:
+			text: "Hello World!"
+
+	TabbedPanelItem:
+		text: 'Tab 2'
+		Image:
+			source:  "D:\kivy\kivy.2.1.0\images\dp.jpg"
+
+	TabbedPanelItem:
+		text: 'Tab 3'
+		BoxLayout:
+			Label:
+				text: "Press The Button"
+			Button:
+				text: "Click Here!!"
+
+
