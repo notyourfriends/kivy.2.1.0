@@ -8,13 +8,22 @@
 
 		Label:
 			id:my_label
-			text: 'Hello World'
+			text: 'Click the image below'
 			font_size: 32
 
+
 		Button:
-			text: 'Press Here'
+			text: ''
 			font_size: 32
+			size_hint: (.15, .28)
+			pos_hint: {'center_x': 0.5}
+			background_color: (0, 0, 0, 0)
+
+			on_press: root.click_on()
+			on_release: root.click_off()
+
 			Image:
-				source: 'images/kaneki.png'
+				id: my_image
+				source: 'images/before.png'
 				center_x: self.parent.center_x
 				center_y: self.parent.center_y
