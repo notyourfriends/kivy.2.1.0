@@ -1,0 +1,67 @@
+<MyLayout>
+	BoxLayout:
+		orientation: 'vertical'
+		size: (root.width, root.height)
+
+		padding: 20
+		spacing: 20
+
+		Accordion:
+			orientation: 'vertical'
+
+			AccordionItem:
+				title: 'T37: ProgressBar'
+
+				Label:
+					id: progress_id
+					text: "0% Progress"
+
+				ProgressBar:
+					id: my_progress_bar
+					value: 0 
+					min: 0
+					max: 1
+					pos_hint: {'x': .1}
+					size_hint_x: .8
+
+
+				Button:
+					text: 'Press here'
+					on_press: root.press_it()
+
+
+			AccordionItem:
+				title: 'T38: Mark-Up'
+
+				Label:
+					markup: True
+					text: 'This is [color=#12af00][b]BOLD[/b][/color] [font=times]text[/font] [sup]Up[/sup]'
+					font_size: 20
+
+				Label:
+					markup: True
+					text: 'This is [size=50][i]Italic[/i][/size] text [sub]Down[/sub]'
+					font_size: 20
+
+				Button:
+					markup: True
+					text: '[u]Press[/u] [s]Here[/s]'
+					font_size: 20
+
+			AccordionItem:
+				title: 'T39: Switches'
+
+				Label:
+					id: switch_label
+					text: 'Click the Switch'
+					font_size:20
+
+				Switch:
+					active: False
+					disabled: False
+					font_size:20
+					on_active: root.switch_click(self, self.active)
+
+
+
+
